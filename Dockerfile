@@ -17,4 +17,4 @@ COPY --from=builder /app .
 
 EXPOSE 8080
 
-ENTRYPOINT ["./app -addr=:8080 -sdbDir=/mnt/images/onlinedb"]
+ENTRYPOINT ["./app", "-addr=:8080", "-sdbDir=/mnt/images/onlinedb"]
