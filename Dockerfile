@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:latest AS builder
 
 RUN apk update && apk add alpine-sdk git && rm -rf /var/cache/apk/*
 
