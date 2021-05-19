@@ -13,7 +13,7 @@ RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 
 RUN mkdir -p /app
 WORKDIR /app
-COPY /app .
+COPY --from=builder /app .
 
 EXPOSE 8080
 
