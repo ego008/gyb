@@ -1,0 +1,16 @@
+---
+application:
+  name: "gyb"
+  project: "gyb"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "images"
+    size: "200"
+    type: "ssd"
+    mount_point: "/mnt/images"
+routers:
+- name: "main-gyb"
+  routes:
+  - application_name: "gyb"
+    paths:
+    - "/*"
